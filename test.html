@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<SCRIPT language="JavaScript">
+<!--
+    function hi_and_bye()
+    {
+        window.alert('Hi!');
+        window.alert('Bye!');
+    }
+//-->
+
+	function urlset(url){
+		document.getElementById('content_iframe').src = url;
+	}
+			
+</SCRIPT>
+<html>
+<body>
+<form>
+<input type="button" onClick="urlset('test.html');">
+<iframe id='content_iframe'/>
+</form>
+</body>
+</html>
