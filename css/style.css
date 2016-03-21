@@ -231,11 +231,11 @@
 		
 		.button
 		{
-			margin:10px;
+			margin:5px;
 			background-color:#5959FF;
 			border: none;
 			color: white;
-			padding: 8px 32px;
+			padding: 8px 20px;
 			text-align: center;
 			text-decoration: none;
 			display: inline-block;
@@ -245,6 +245,8 @@
 		}
 		.button:hover {
 			background-color: #8282FF;
+			
+			padding: 4px 20px
 		}
 	.divider
 	{
@@ -252,7 +254,21 @@
 		height: 20px;
 		
 	}
+.fluidMedia {
+    position: relative;
+    padding-bottom: 80%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
 
+.fluidMedia iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 80%;
+    height: 100%;
+}
 /*********************************************************************************/
 /* Icons                                                                         */
 /* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
@@ -807,7 +823,7 @@
 		padding: 5px; /*文字與#content間的內距*/
 		font-size: 14px; /*字體大小*/
 		line-height: 2em;   /*字體行間為兩個字距*/
-		border: 4px solid #313000;
+		/*border: 4px solid #313000;*/
 	}
 	
 	#sidebar1 header h2
