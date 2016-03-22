@@ -26,14 +26,12 @@
 	</head>
 	<body>
 		<div id="wrapper"> 
-			<center><img src="images/head1.jpg" ></center>
+			<center><img src="images/head.jpg" ></center>
 			
-			<div id="header">
+			<div id="container">
 			
-			</div>
 			
-			<center>
-				
+				<section>
 			
 				<input type ="button" class="button" onClick="urlset('news.html');" value="最新情報"></input>
 				<input type ="button" class="button" onClick="urlset('about_us.html');" value="公司簡介"></input>
@@ -43,16 +41,24 @@
 				<!--
 				<input type ="button" class="button" onclick="document.getElementById('contnet_iframe').src='news.html'" value="Test"></input>
 				-->
-			</center>
-		
-			<div id="main" >
-				<form name="reg" action="deleteFavorite.php" method="post" align="right">
-					<font size="4"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-									&nbsp; &nbsp; &nbsp; &nbsp; 產品搜尋 &nbsp;</font>
-					<input type="text" name="attraction_id"/>
-					<font size="4"> &nbsp; </font>
-					<input type="submit" value="Admit"/>
+				
+				</section>
+				
+				<section>
+				
+				<form action="deleteFavorite.php" method="post">
+					<font size="4px"> 產品搜尋 </font>
+					<input type="text" name="attraction_id"></input>
+					<font size="4px"> &nbsp; </font>
+					<input type="submit" value="Go!"/>
 				</form>
+				
+				</section>
+			</div>
+
+
+			<div id="main" >
+				
 				<section>
 					<div class="fluidMedia">
 						<iframe id="content_iframe" src="about_us.html" frameborder="0"> </iframe>
