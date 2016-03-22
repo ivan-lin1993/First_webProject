@@ -29,36 +29,30 @@
 			<center><img src="images/head.jpg" ></center>
 			
 			<div id="container">
-			
-			
-				<section>
-			
-				<input type ="button" class="button" onClick="urlset('news.html');" value="最新情報"></input>
-				<input type ="button" class="button" onClick="urlset('about_us.html');" value="公司簡介"></input>
-				<input type ="button" class="button" onClick="urlset('new_product.html');" value="新進設備"></input>
-				<input type ="button" class="button" onClick="urlset('second_hand.html');" value="二手設備"></input>
-				<input type ="button" class="button" onClick="urlset('contact_us.html');" value="聯絡我們"></input>
-				<!--
-				<input type ="button" class="button" onclick="document.getElementById('contnet_iframe').src='news.html'" value="Test"></input>
-				-->
-				
-				</section>
-				
-				<section>
-				
-				<form action="deleteFavorite.php" method="post">
-					<font size="4px"> 產品搜尋 </font>
-					<input type="text" name="attraction_id"></input>
-					<font size="4px"> &nbsp; </font>
-					<input type="submit" value="Go!"/>
-				</form>
-				
-				</section>
+				<nav id="nav">
+					<ul>
+						<input type ="button" class="button" onClick="urlset('news.html');" value="最新情報"></input>
+						<input type ="button" class="button" onClick="urlset('about_us.html');" value="公司簡介"></input>
+						<input type ="button" class="button" onClick="urlset('new_product.html');" value="新進設備"></input>
+						<input type ="button" class="button" onClick="urlset('second_hand.html');" value="二手設備"></input>
+						<input type ="button" class="button" onClick="urlset('contact_us.html');" value="聯絡我們"></input>
+						<!--
+						<input type ="button" class="button" onclick="document.getElementById('contnet_iframe').src='news.html'" value="Test"></input>
+						-->
+						
+						<li><form action="deleteFavorite.php" method="post">
+							<font size="4px"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+											  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;產品搜尋 </font>
+							<input type="text" name="attraction_id"></input>
+							<font size="4px"> &nbsp; </font>
+							<input type="submit" value="Go!"/>
+						</form></li>
+					</ul>
+				</nav>
 			</div>
 
 
 			<div id="main" >
-				
 				<section>
 					<div class="fluidMedia">
 						<iframe id="content_iframe" src="about_us.html" frameborder="0"> </iframe>
@@ -69,14 +63,13 @@
 
 		
 		<div id="footer">
-				<div class="container">
-					<section>
-						彗星科技有限公司 版權所有 Copyright © 2016 - All Rights Reserved <br>
-						TLE:(03)471-7045 &nbsp; &nbsp; FAX:(03)471-7045 &nbsp; &nbsp; E-mail: <br>
-						地址:桃園市龍潭區楊銅路一段105號
-					</section>
-				</div>
+			<div class="container">
+				<section>
+					彗星科技有限公司 版權所有 Copyright © 2016 - All Rights Reserved <br>
+					TLE:(03)471-7045 &nbsp; &nbsp; FAX:(03)471-7045 &nbsp; &nbsp; E-mail: <br>
+					地址:桃園市龍潭區楊銅路一段105號
+				</section>
 			</div>
-		
+		</div>
 	</body>
 </html>
