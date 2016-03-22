@@ -46,37 +46,18 @@
 			</center>
 		
 			<div id="main" >
-				<div class="container">
-					<div class="row">
-						<div id="sidebar1" class="3u">
-							<section> <center>
-								<ul class="default alt">
-									<li class="fa fa-angle-right"><a href="m_Member.php">基本資料</a></li>
-									<li class="fa fa-angle-right"><a href="myfavorite.php">我的最愛</a></li>
-									<li class="fa fa-angle-right"><a href="record.php">旅遊紀錄</a></li>
-								</ul>
-							</center> </section>
-						</div>
-					
-						<div class="9u skel-cell-important">
-							<section> <center>
-								<form name="reg" action="deleteFavorite.php" method="post">
-									<font size="4"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-													&nbsp; &nbsp; &nbsp; &nbsp; 產品搜尋 &nbsp;</font>
-									<input type="text" name="attraction_id"/>
-									<font size="4"> &nbsp; </font>
-									<input type="submit" value="Admit"/>
-								</form>
-							</center> </section>
-							
-							<section>
-								<div class="fluidMedia">
-									<iframe id="content_iframe" src="about_us.html" frameborder="0"> </iframe>
-								</div>
-							</section>
-						</div>
+				<form name="reg" action="deleteFavorite.php" method="post" align="right">
+					<font size="4"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+									&nbsp; &nbsp; &nbsp; &nbsp; 產品搜尋 &nbsp;</font>
+					<input type="text" name="attraction_id"/>
+					<font size="4"> &nbsp; </font>
+					<input type="submit" value="Admit"/>
+				</form>
+				<section>
+					<div class="fluidMedia">
+						<iframe id="content_iframe" src="about_us.html" frameborder="0"> </iframe>
 					</div>
-				</div>
+				</section>
 			</div>
 		</div> <!--wrapper finish-->
 
