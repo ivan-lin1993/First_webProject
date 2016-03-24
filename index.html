@@ -24,7 +24,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		
 	</head>
-	<body>
+	<body class="all-body">
 		<div id="wrapper"> 
 			<center><img src="images/head.jpg" ></center>
 			
@@ -33,16 +33,18 @@
 					<ul>
 						<input type ="button" class="button" onClick="urlset('news.html');" value="最新情報"></input>
 						<input type ="button" class="button" onClick="urlset('about_us.html');" value="公司簡介"></input>
-						<input type ="button" class="button" onClick="urlset('new_product.html');" value="新進設備"></input>
-						<input type ="button" class="button" onClick="urlset('second_hand.html');" value="二手設備"></input>
+						<input type ="button" class="button" onClick="urlset('AOI.html');" value="新進設備"></input>
+						<input type ="button" class="button" onClick="urlset('will_buy.html');" value="二手設備"></input>
 						<input type ="button" class="button" onClick="urlset('contact_us.html');" value="聯絡我們"></input>
 						<!--
 						<input type ="button" class="button" onclick="document.getElementById('contnet_iframe').src='news.html'" value="Test"></input>
 						-->
 						
 						<li><form action="deleteFavorite.php" method="post">
-							<font size="4px"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-											  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;產品搜尋 </font>
+							<font size="4px" color="white"> 
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;產品搜尋
+							</font>
 							<input type="text" name="attraction_id"></input>
 							<font size="4px"> &nbsp; </font>
 							<input type="submit" value="Go!"/>
